@@ -44,4 +44,5 @@ Feel free to explore the project and contribute to its development! If you have 
 ![Architecture](https://github.com/theycallme-batman/Zathura-Airlines/assets/72347879/2061a436-8a48-4f95-9ae5-73c59c17dc3c)
 
 ## PowerBI Report
-![PowerBI Report](https://github.com/theycallme-batman/Zathura-Airlines/assets/72347879/22c7e570-45e0-4cb9-b6c2-c5b893581486)
+![PowerBI1](https://github.com/theycallme-batman/Zathura-Airlines/assets/72347879/4b800c31-1293-41a9-b470-d2599464971c)
+
