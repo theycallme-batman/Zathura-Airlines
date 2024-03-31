@@ -1,0 +1,94 @@
+
+-- Table: public.flights
+
+-- DROP TABLE IF EXISTS public.flights;
+
+CREATE TABLE IF NOT EXISTS public.flights
+(
+    id bigint,
+    flight_code text COLLATE pg_catalog."default",
+    source_airport text COLLATE pg_catalog."default",
+    destination_airport text COLLATE pg_catalog."default",
+    source_city text COLLATE pg_catalog."default",
+    destination_city text COLLATE pg_catalog."default",
+    estimated_departure_time timestamp without time zone,
+    departure_time text COLLATE pg_catalog."default",
+    estimated_arrival_time timestamp without time zone,
+    arrival_time text COLLATE pg_catalog."default",
+    passenger_data text COLLATE pg_catalog."default",
+    total_passengers bigint,
+    status text COLLATE pg_catalog."default",
+    load_timestamp timestamp without time zone DEFAULT CURRENT_TIMESTAMP
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.flights
+    OWNER to sv_pgdev;
+
+-- Table: public.airplanes
+
+-- DROP TABLE IF EXISTS public.airplanes;
+
+CREATE TABLE IF NOT EXISTS public.airplanes
+(
+    airplane_id text COLLATE pg_catalog."default",
+    name text COLLATE pg_catalog."default",
+    type text COLLATE pg_catalog."default",
+    total_seats bigint,
+    classes text COLLATE pg_catalog."default",
+    fuel_capacity text COLLATE pg_catalog."default",
+    range text COLLATE pg_catalog."default",
+    load_timestamp timestamp without time zone DEFAULT CURRENT_TIMESTAMP
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.airplanes
+    OWNER to sv_pgdev;
+	
+	
+-- Table: public.flight_schedules
+
+-- DROP TABLE IF EXISTS public.flight_schedules;
+
+CREATE TABLE IF NOT EXISTS public.flight_schedules
+(
+    name text COLLATE pg_catalog."default",
+    frequency text COLLATE pg_catalog."default",
+    source text COLLATE pg_catalog."default",
+    destination text COLLATE pg_catalog."default",
+    timings text COLLATE pg_catalog."default",
+    load_timestamp timestamp without time zone DEFAULT CURRENT_TIMESTAMP
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.flight_schedules
+    OWNER to sv_pgdev;
+	
+	
+	-- Table: public.payments
+
+-- DROP TABLE IF EXISTS public.payments;
+
+CREATE TABLE IF NOT EXISTS public.payments
+(
+    flight_id bigint,
+    first_name text COLLATE pg_catalog."default",
+    last_name text COLLATE pg_catalog."default",
+    contact_number text COLLATE pg_catalog."default",
+    email_id text COLLATE pg_catalog."default",
+    seat_number text COLLATE pg_catalog."default",
+    mode_of_payment text COLLATE pg_catalog."default",
+    time_of_payment timestamp without time zone,
+    amount numeric(20,2),
+    transaction_id bigint,
+    agent text COLLATE pg_catalog."default",
+    load_timestamp timestamp without time zone DEFAULT CURRENT_TIMESTAMP
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.payments
+    OWNER to sv_pgdev;
