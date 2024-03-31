@@ -35,8 +35,6 @@ The project is actively being worked on, and there are some issues that need att
 ## Orchestration
 The entire project orchestration is managed using Azure Data Factory. The Data Factory code can be found in [this repository](https://github.com/theycallme-batman/Zathura-dev-adf).
 
-Feel free to explore the project and contribute to its development! If you have any questions or suggestions, don't hesitate to reach out - [LinkedIn](https://www.linkedin.com/in/yash-kothari-5727781b2/).
-
 ## Networking Diagram
 ![Networking Diagram](https://github.com/theycallme-batman/Zathura-Airlines/assets/72347879/f7b36959-e20f-4147-98cd-8aa353314446)
 
@@ -46,3 +44,5 @@ Feel free to explore the project and contribute to its development! If you have 
 ## PowerBI Report
 ![PowerBI1](https://github.com/theycallme-batman/Zathura-Airlines/assets/72347879/4b800c31-1293-41a9-b470-d2599464971c)
 
+## Connect
+Feel free to explore the project and contribute to its development! If you have any questions or suggestions, don't hesitate to reach out - [LinkedIn](https://www.linkedin.com/in/yash-kothari-5727781b2/).
