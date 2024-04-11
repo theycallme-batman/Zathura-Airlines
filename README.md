@@ -41,6 +41,10 @@ The entire project orchestration is managed using Azure Data Factory. The Data F
 ## Architecture
 ![Architecture](https://github.com/theycallme-batman/Zathura-Airlines/assets/72347879/2061a436-8a48-4f95-9ae5-73c59c17dc3c)
 
+## Dimensional Model
+![DimensionalModel](https://github.com/theycallme-batman/Zathura-Airlines/assets/72347879/ef60d05c-b0a5-49be-92aa-7c37885f3974)
+
+
 ## PowerBI Report
 ![PowerBI1](https://github.com/theycallme-batman/Zathura-Airlines/assets/72347879/4b800c31-1293-41a9-b470-d2599464971c)
 
